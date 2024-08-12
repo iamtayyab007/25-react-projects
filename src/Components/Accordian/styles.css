@@ -1,0 +1,35 @@
+.Accordian {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.name {
+  /* display: flex;
+  align-items: center; */
+
+  width: 300px;
+  height: auto;
+  background-color: brown;
+  padding: 30px 60px;
+  color: white;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 5px;
+  cursor: pointer;
+}
+.btn {
+  margin-bottom: 20px;
+  cursor: pointer;
+}
