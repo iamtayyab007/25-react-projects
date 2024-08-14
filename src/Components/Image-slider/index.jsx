@@ -6,7 +6,6 @@ import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 export const ImageSlider = ({ url, limit = 5, page = 1 }) => {
   const [images, setImages] = useState([]);
   const [currentSlide, setCurrentSlide] = useState(0);
-  const circlesArray = new Array(5).fill(0);
 
   const handleleft = () => {
     setCurrentSlide(currentSlide === 0 ? images.length - 1 : currentSlide - 1);
