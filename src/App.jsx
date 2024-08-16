@@ -7,9 +7,9 @@ import { ImageSlider } from "./Components/Image-slider";
 import { LoadMore } from "./Components/Load-more-data";
 import { TreeView } from "./Components/Tree-view";
 import { menus } from "./Components/Tree-view/data";
+import { QrCodeGenerator } from "./Components/qr-code-generator";
 
 function App() {
-  const star = 5;
   return (
     <>
       {/*<Accordian />
@@ -25,9 +25,10 @@ function App() {
 
       <LoadMore />
 
-      */}
-
+      
       <TreeView menus={menus} />
+      */}
+      <QrCodeGenerator />
     </>
   );
 }

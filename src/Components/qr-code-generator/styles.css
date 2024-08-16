@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+input {
+  padding: 30px;
+  background-color: antiquewhite;
+  border: none;
+  outline: none;
+  color: black;
+}
+input::placeholder {
+  color: white;
+}
+.btn {
+  background-color: blueviolet;
+  border: none;
+  outline: none;
+}
+.btn:hover {
+  background-color: red;
+}
