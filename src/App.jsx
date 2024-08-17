@@ -8,6 +8,7 @@ import { LoadMore } from "./Components/Load-more-data";
 import { TreeView } from "./Components/Tree-view";
 import { menus } from "./Components/Tree-view/data";
 import { QrCodeGenerator } from "./Components/qr-code-generator";
+import { ThemeSwitch } from "./Components/light-dark-mode";
 
 function App() {
   return (
@@ -27,8 +28,12 @@ function App() {
 
       
       <TreeView menus={menus} />
-      */}
+   
       <QrCodeGenerator />
+
+         */}
+
+      <ThemeSwitch />
     </>
   );
 }
