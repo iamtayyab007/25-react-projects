@@ -9,6 +9,7 @@ import { TreeView } from "./Components/Tree-view";
 import { menus } from "./Components/Tree-view/data";
 import { QrCodeGenerator } from "./Components/qr-code-generator";
 import { ThemeSwitch } from "./Components/light-dark-mode";
+import { ScrollIndicator } from "./Components/Scroll-indicator";
 
 function App() {
   return (
@@ -31,9 +32,12 @@ function App() {
    
       <QrCodeGenerator />
 
-         */}
+       
 
       <ThemeSwitch />
+        */}
+
+      <ScrollIndicator url={"https://dummyjson.com/products?limit=100"} />
     </>
   );
 }
