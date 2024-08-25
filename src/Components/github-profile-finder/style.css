@@ -1,0 +1,55 @@
+.github-profile-container {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1000px;
+  padding: 20px;
+  border-radius: 8px;
+  position: absolute; 
+  top: 0; 
+  left: 50%; 
+ transform: translateX(-50%); /
+}
+.input-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.input-wrapper input {
+  background-color: aqua;
+  border-radius: 12px;
+  padding: 30px 50px;
+  font-size: 20px;
+}
+
+button {
+  padding: 20px 30px;
+  background-color: red;
+}
+
+button:hover {
+  cursor: pointer;
+
+  outline: none;
+  background-color: black;
+}
+
+.card-wrapper{
+  position: relative;
+ border: 2px solid black;
+ margin-top: 70px;
+
+}
+.images{
+  margin-top: 12px;
+}
+img{
+  height: 200px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+
+.credentials{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}

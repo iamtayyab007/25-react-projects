@@ -14,6 +14,7 @@ import { ScrollIndicator } from "./Components/Scroll-indicator";
 import { TabsIndex } from "./Components/custom-tabs/TabsIndex";
 import { TabsTest } from "./Components/custom-tabs/tabsTest";
 import { ModalText } from "./Components/Modal Popup/ModalText";
+import { GithubProfileFinder } from "./Components/github-profile-finder";
 
 function App() {
   return (
@@ -47,9 +48,12 @@ function App() {
 
       <TabsTest />
 
-        */}
+        
 
       <ModalText />
+      */}
+
+      <GithubProfileFinder />
     </>
   );
 }
