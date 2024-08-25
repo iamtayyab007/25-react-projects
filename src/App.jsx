@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./App.css";
 
 import { Accordian } from "./Components/Accordian";
 import { RandomColor } from "./Components/Random-color";
@@ -12,6 +13,7 @@ import { ThemeSwitch } from "./Components/light-dark-mode";
 import { ScrollIndicator } from "./Components/Scroll-indicator";
 import { TabsIndex } from "./Components/custom-tabs/TabsIndex";
 import { TabsTest } from "./Components/custom-tabs/tabsTest";
+import { ModalText } from "./Components/Modal Popup/ModalText";
 
 function App() {
   return (
@@ -41,9 +43,13 @@ function App() {
 
       <ScrollIndicator url={"https://dummyjson.com/products?limit=100"} />
 
-       */}
+     
 
       <TabsTest />
+
+        */}
+
+      <ModalText />
     </>
   );
 }
