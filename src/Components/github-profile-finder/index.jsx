@@ -5,27 +5,30 @@ import { Cards } from "./Cards";
 
 export const GithubProfileFinder = () => {
   const [username, setUsername] = useState("iamtayyab007");
-  const [data, setData] = useState("");
-
-  const handleSubmit = () => {
-    setUsername(username);
-    setUsername("");
-  };
+  const [data, setData] = useState(null);
 
   async function fetchGithubUrl() {
     try {
       const response = await fetch(`https://api.github.com/users/${username}`);
       const result = await response.json();
-      setData(result);
-      console.log(result);
+
+      if (result) {
+        setData(result);
+        setUsername("");
+        console.log(result);
+      }
     } catch (error) {
       console.log("", error);
     }
   }
 
+  const handleSubmit = () => {
+    fetchGithubUrl();
+  };
+
   useEffect(() => {
     fetchGithubUrl();
-  }, [username]);
+  }, []);
 
   return (
     <div className="github-profile-container">
