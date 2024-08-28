@@ -16,6 +16,7 @@ import { TabsTest } from "./Components/custom-tabs/tabsTest";
 import { ModalText } from "./Components/Modal Popup/ModalText";
 import { GithubProfileFinder } from "./Components/github-profile-finder";
 import { SearchAutoComplete } from "./Components/Search-Autocomplete-Api";
+import { TicTacToe } from "./Components/Tic-Tac-Toe";
 
 function App() {
   return (
@@ -55,9 +56,12 @@ function App() {
       
 
       <GithubProfileFinder />
-      */}
+   
 
       <SearchAutoComplete />
+         */}
+
+      <TicTacToe />
     </>
   );
 }
