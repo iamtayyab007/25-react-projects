@@ -45,6 +45,8 @@ button:hover {
 }
 
 .active {
+  color: green;
+
   animation: popOut 1s ease forwards;
 }
 @keyframes popOut {
@@ -60,4 +62,8 @@ button:hover {
     transform: scale(1.5);
     opacity: 0;
   }
+}
+.winner {
+  color: green;
+  font-size: 20px;
 }

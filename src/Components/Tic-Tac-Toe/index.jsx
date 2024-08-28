@@ -157,8 +157,10 @@ export const TicTacToe = () => {
           </div>
         </div>
       </div>
-      <h3>{`${player} ${isXTurn ? "X" : "0"}`}</h3>
-      {gameStop && <h3>The winner is: {win}</h3>}
+      {gameStop === false ? <h3>{`${player} ${isXTurn ? "X" : "0"}`}</h3> : ""}
+      {gameStop && (
+        <h3 className={gameStop ? "winner" : ""}>The winner is: {win}</h3>
+      )}
       {gameStop && <button onClick={resetGame}>Play Again</button>}
     </div>
   );
