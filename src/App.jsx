@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./App.css";
+//import "./App.css";
 
 import { Accordian } from "./Components/Accordian";
 import { RandomColor } from "./Components/Random-color";
@@ -17,6 +17,8 @@ import { ModalText } from "./Components/Modal Popup/ModalText";
 import { GithubProfileFinder } from "./Components/github-profile-finder";
 import { SearchAutoComplete } from "./Components/Search-Autocomplete-Api";
 import { TicTacToe } from "./Components/Tic-Tac-Toe";
+import { FeatureFlags } from "./Components/feature-flag";
+import FeatureFlagGlobalState from "./Components/feature-flag/context";
 
 function App() {
   return (
@@ -59,9 +61,14 @@ function App() {
    
 
       <SearchAutoComplete />
-         */}
+         
 
       <TicTacToe />
+      */}
+
+      <FeatureFlagGlobalState>
+        <FeatureFlags />
+      </FeatureFlagGlobalState>
     </>
   );
 }
