@@ -1,5 +1,5 @@
 import { useState } from "react";
-//import "./App.css";
+import "./App.css";
 
 import { Accordian } from "./Components/Accordian";
 import { RandomColor } from "./Components/Random-color";
@@ -19,6 +19,7 @@ import { SearchAutoComplete } from "./Components/Search-Autocomplete-Api";
 import { TicTacToe } from "./Components/Tic-Tac-Toe";
 import { FeatureFlags } from "./Components/feature-flag";
 import FeatureFlagGlobalState from "./Components/feature-flag/context";
+import { TestData } from "./Components/Use-Fetch-Hook/TestData";
 
 function App() {
   return (
@@ -64,11 +65,14 @@ function App() {
          
 
       <TicTacToe />
-      */}
+    
 
       <FeatureFlagGlobalState>
         <FeatureFlags />
       </FeatureFlagGlobalState>
+        */}
+
+      <TestData />
     </>
   );
 }

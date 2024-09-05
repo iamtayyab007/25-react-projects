@@ -15,9 +15,9 @@
 
   width: 300px;
   height: auto;
-  background-color: brown;
+  background-color: rgb(60, 203, 88);
   padding: 30px 60px;
-  color: white;
+  color: rgb(29, 27, 27);
 }
 
 .title {
