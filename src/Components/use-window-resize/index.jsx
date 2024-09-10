@@ -1,0 +1,26 @@
+import { useState, useLayoutEffect } from "react";
+
+export default function useWindowResize() {
+  const [windowsResize, setWindowsResize] = useState({
+    width: 0,
+    height: 0,
+  });
+
+  function handleResize() {
+    setWindowsResize({
+      width: window.innerWidth,
+      height: window.innerHeight,
+    });
+  }
+
+  useLayoutEffect(() => {
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  return windowsResize;
+}

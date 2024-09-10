@@ -21,6 +21,7 @@ import { FeatureFlags } from "./Components/feature-flag";
 import FeatureFlagGlobalState from "./Components/feature-flag/context";
 import { TestData } from "./Components/Use-Fetch-Hook/TestData";
 import { UseOnClickOutsideTest } from "./Components/use-outside-click";
+import { Test } from "./Components/use-window-resize/test";
 
 function App() {
   return (
@@ -74,9 +75,12 @@ function App() {
        
 
       <TestData />
-       */}
+       
 
       <UseOnClickOutsideTest />
+      */}
+
+      <Test />
     </>
   );
 }
